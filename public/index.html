@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.150.1"><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.150.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="https://bogdanion.netlify.app/">
+<meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Bogdan Ion Profile">
   <meta property="og:title" content="Bogdan Ion Profile">
   <meta property="og:description" content="A short story about me">
@@ -134,13 +134,16 @@ Bogdan Ion Profile
 
     switch (localStorageValue) {
         case "dark":
+            document.documentElement.classList.add('dark');
             document.body.classList.add('dark');
             break;
         case "light":
             document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
             break;
         default:
             if (mediaQuery) {
+                document.documentElement.classList.add('dark');
                 document.body.classList.add('dark');
             }
             break;
@@ -620,7 +623,7 @@ Bogdan Ion Profile
             
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
                 <div class="image d-flex px-5">
-                    <img src="/images/bgdextra.jpg" class="img-thumbnail mx-auto rounded" alt="">
+                    <img src="/images/bgdextra.jpg" class="img-thumbnail mx-auto rounded-circle" alt="">
                 </div>
             </div>
             
@@ -633,27 +636,9 @@ Bogdan Ion Profile
 I learnt how to <strong>respect</strong> and what to do to <strong>deserve</strong> other people&rsquo;s respect.
 <br></p>
 
+
                 
-                
-                <h5>So here is something about myself:</h5>
-                <ul>
-                    
-                    <li>Understanding !!</li>
-                    
-                    <li>Social</li>
-                    
-                    <li>Open-minded</li>
-                    
-                    <li>Adaptable</li>
-                    
-                    <li>Flexible</li>
-                    
-                    <li>Problem solving</li>
-                    
-                </ul>
-                <br>
-                
-                <h5>And, of course, a few hard skills I believe I master:</h5>
+                And, of course, a few hard skills I believe I master:
                 <ul>
                     
                     <li>C/C++/C#</li>
@@ -678,14 +663,10 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
                     
                 </ul>
                 
-
-                
-                
             </div>
         </div>
     </div>
 </section>
-
 
 <section id="experience" class="py-5">
     <div class="container">
@@ -693,59 +674,36 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 py-5">
                 <div class="experience-container px-3 pt-2">
-                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-2 bg-transparent primary-font" id="pills-tab" role="tablist">
                         
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link active bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='AROBS-Transilvania-Sep-2022---Dec-2022-tab'
-                                data-bs-target='#pills-AROBS-Transilvania-Sep-2022---Dec-2022'
-                                aria-controls='AROBS-Transilvania-Sep-2022---Dec-2022' 
-                            >
-                                AROBS Transilvania
-                            </div>
-                        </li>
-                        
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div 
+                                    class="nav-link active bg-transparent" 
+                                    aria-selected="true" 
+                                    role="tab" 
+                                    data-bs-toggle="pill"
+                                    id='AROBS-Transilvania-Sep-2022---Dec-2022-tab'
+                                    data-bs-target='#pills-AROBS-Transilvania-Sep-2022---Dec-2022'
+                                    aria-controls='AROBS-Transilvania-Sep-2022---Dec-2022' 
+                                >
+                                    AROBS Transilvania
+                                </div>
+                            </li>
                         
                     </ul>
-                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
-                        
-                        
-                        <div 
-                            class="tab-pane fade show active bg-transparent" 
-                            role="tabpanel"
-                            id='pills-AROBS-Transilvania-Sep-2022---Dec-2022'
-                            aria-labelledby='pills-AROBS-Transilvania-Sep-2022---Dec-2022-tab'
-                        >
-                            <div>
-                                <span class="h4">Intern Software Developer</span>
-                                <small>-</small>
-                                <a href="https://arobs.com/" target="_blank">AROBS Transilvania</a>
-                                <div class="pb-1">
-                                    <small>Sep 2022 - Dec 2022</small>
-                                    
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Intern&#32;Software&#32;Developer&#32;at&#32;AROBS&#32;Transilvania
-                                        >
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
-                                    
-                                </div>
 
+                    <div class="tab-content pb-3 bg-transparent primary-font" id="pills-tabContent">
+                        
+                            
+                            
+                            <div 
+                                class="tab-pane fade bg-transparent show active"
+                                role="tabpanel"
+                                id='pills-AROBS-Transilvania-Sep-2022---Dec-2022'
+                                aria-labelledby='pills-AROBS-Transilvania-Sep-2022---Dec-2022-tab'
+                            >
                                 
                             </div>
-
-                            I worked as an intern for AROBS, being in a 3-man team and working on a side project. We programmed NUCLEO STM32 boards at the lowest level using C.
-                        </div>
                         
                         
                     </div>
@@ -961,10 +919,11 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
                         </div>
                         <h5 class="card-title bg-transparent mt-1">LogiQ Puzzles</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            <p>A mobile app <strong>deployed</strong> on Google Play, in the style of NYT Games but innovative in Romania (the main market-target), because some games didn&rsquo;t exist before in our language.</p>
-<p><strong>100% original and individual work</strong>. I started the project in May 2025 and deployed to prod in September 2025. Currently still working on it, much more to be done.</p>
-<p>I started this both as a personal challenge and as a frustration that some puzzles didn&rsquo;t exist in our country. I am proud of what I achieved and you&rsquo;re welcome to check it out, there are math games as well which don&rsquo;t need language understanding :).</p>
+                            A mobile app **deployed** on Google Play, in the style of NYT Games but innovative in Romania (the main market-target), because some games didn&#39;t exist before in our language.  
 
+**100% original and individual work**. I started the project in May 2025 and deployed to prod in September 2025. Currently still working on it, much more to be done.
+
+I started this both as a personal challenge and as a frustration that some puzzles didn&#39;t exist in our country. I am proud of what I achieved and you&#39;re welcome to check it out, there are math games as well which don&#39;t need language understanding :).
                         </div>
                     </div>
                     
@@ -986,10 +945,11 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Graph-based biomarker extraction of brain vascular networks</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            <p>This is a research project where we try to reconstruct blood vessels or airways which are structured as tubular trees.</p>
-<p>We will try to follow the center of these structures and remake them while not losing their branching topology.</p>
-<p>WORK IN PROGRESS!</p>
+                            This is a research project where we try to reconstruct blood vessels or airways which are structured as tubular trees.
 
+We will try to follow the center of these structures and remake them while not losing their branching topology.
+
+WORK IN PROGRESS!
                         </div>
                     </div>
                     
@@ -1013,10 +973,11 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Autonomous robot</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            <p>A 5-man team under Prof. Patric Jensfelt working for a semester to program a robot function in a workspace and fulfill some tasks <strong>autonomously</strong>.</p>
-<p>This means we needed to take care of localization, planning, inverse kinematics for the arm, object detection with rgb-d camera and finally the brain.</p>
-<p>We dived quite deep in ROS2 topics, services, nodes.</p>
+                            A 5-man team under Prof. Patric Jensfelt working for a semester to program a robot function in a workspace and fulfill some tasks **autonomously**.
 
+This means we needed to take care of localization, planning, inverse kinematics for the arm, object detection with rgb-d camera and finally the brain.
+
+We dived quite deep in ROS2 topics, services, nodes.
                         </div>
                     </div>
                     
@@ -1040,10 +1001,11 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Platform as a Service</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            <p>For my final Bachelor thesis I developed my own Platform as a Service with the purpose to be used by fellow students to be able to present their works publically, not on localhost or in devmode.</p>
-<p>So at that time I was supporting 3 DB systems (MongoDb, Postgres and MySql (or none)), 5 popular backend frameworks and I also had an option for React (if the user&rsquo;s project required frontend or was managed just by the backend).</p>
-<p>The user could configure the options above in any way desired, summing up to 40 possible configurations.</p>
+                            For my final Bachelor thesis I developed my own Platform as a Service with the purpose to be used by fellow students to be able to present their works publically, not on localhost or in devmode.
 
+So at that time I was supporting 3 DB systems (MongoDb, Postgres and MySql (or none)), 5 popular backend frameworks and I also had an option for React (if the user&#39;s project required frontend or was managed just by the backend).
+
+The user could configure the options above in any way desired, summing up to 40 possible configurations.
                         </div>
                     </div>
                     
@@ -1055,111 +1017,98 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
     </div>
 </section>
 
-<section id="sports" class="py-5">
+<section id="achievements" class="py-5">
     <div class="container">
-        <h3 class="text-center">Sports</h3>
+        <h3 class="text-center">Achievements</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
                 
+                
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3"
-                         title="Rowing"
-                         style="background-color: #64ffda1a; border: none;">
+                    <a class="card my-3 h-100 p-3" href="https://example.com" title="Google kickstart runner" target="_blank">
                         
-                        <div class="card-head">
-                            <img class="card-img-top" src="/images/rowing_crop.jpg" alt="Rowing">
-                        </div>
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievement.jpg">
+                            </div>
                         
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title">Rowing</h5>
+                            <h5 class="card-title bg-transparent">Google kickstart runner</h5>
                             <div class="card-text secondary-font">
-                                <p>For my year in Stockholm I was part of Akademiska Roddföreningen and did intense training for the full time. It was amazing.</p>
-<p>Unfortunately, there is no such club where I currently live.</p>
-
+                                I solved all problems with optimal solution.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Facebook Hackathon Winner">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievement.jpg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Facebook Hackathon Winner</h5>
+                            <div class="card-text secondary-font">
+                                Developed a product using Artificial Intelligence.
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                
+                
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3"
-                         title="Bouldering"
-                         style="background-color: #64ffda1a; border: none;">
+                    <a class="card my-3 h-100 p-3" href="https://github.com/gurusabarish/hugo-profile" title="Hugo Profile" target="_blank">
                         
-                        <div class="card-head">
-                            <img class="card-img-top" src="/images/boulder_crop.png" alt="Bouldering">
-                        </div>
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievement.jpg">
+                            </div>
                         
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title">Bouldering</h5>
+                            <h5 class="card-title bg-transparent">Hugo Profile</h5>
                             <div class="card-text secondary-font">
-                                I found this passion in 2023. I fell madly in love with it and is probably my main sport currently.
+                                Developed a theme and getting 1K&#43; downloads per month.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Microsoft Imagine Runner">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Microsoft Imagine Runner</h5>
+                            <div class="card-text secondary-font">
+                                We are developed a product which can help others.
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3"
-                         title="Climbing"
-                         style="background-color: #64ffda1a; border: none;">
-                        
-                        <div class="card-head">
-                            <img class="card-img-top" src="/images/climbing_crop.jpg" alt="Climbing">
-                        </div>
-                        
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title">Climbing</h5>
-                            <div class="card-text secondary-font">
-                                I think it&rsquo;s better than Bouldering because of the adrenaline which really makes me feel alive but it&rsquo;s not so accesible to do as Bouldering&hellip;
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3"
-                         title="Snowboarding"
-                         style="background-color: #64ffda1a; border: none;">
-                        
-                        <div class="card-head">
-                            <img class="card-img-top" src="/images/snowboard_crop.jpg" alt="Snowboarding">
-                        </div>
+                    <a class="card my-3 h-100 p-3" href="https://example.com" title="Google Summer of Code" target="_blank">
                         
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title">Snowboarding</h5>
+                            <h5 class="card-title bg-transparent">Google Summer of Code</h5>
                             <div class="card-text secondary-font">
-                                <p>The only problem with Snowboarding is that you can only do it 3 months a year. Every year we have a 1 week intense trip to Austria/Italy/France where we ski/snowboard all day.</p>
-<p>I started it in 2018 and did it every year since then.</p>
-
+                                Contributed to a open source project.
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3"
-                         title="Football"
-                         style="background-color: #64ffda1a; border: none;">
-                        
-                        <div class="card-head">
-                            <img class="card-img-top" src="/images/football_crop.jpg" alt="Football">
-                        </div>
-                        
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title">Football</h5>
-                            <div class="card-text secondary-font">
-                                Last but not least, football. I was born with it, I am a huge football fan and I practice it weekly, but sometimes it&rsquo;s hard if you don&rsquo;t know the right people.
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
             </div>
         </div>
     </div>
 </section>
-
 
 <section id="contact" class="py-5">
     <div class="container">
@@ -1212,7 +1161,7 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://bogdanion.netlify.app/" title="Bogdan Ion Profile">
+                    <a href="http://localhost:1313/" title="Bogdan Ion Profile">
                         <img alt="Footer logo" src="images/fav.png"
                             height="40px" width="40px">
                     </a>
@@ -1226,10 +1175,13 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
+        document.documentElement.classList.add('dark');
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
         document.body.classList.add('dark');
     }
 
@@ -1238,9 +1190,11 @@ I learnt how to <strong>respect</strong> and what to do to <strong>deserve</stro
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
             document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })
