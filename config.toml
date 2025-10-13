@@ -1,0 +1,11 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "My Portfolio"
+theme = "hugo-profile"
+
+[params]
+  author = "Your Name"
+  description = "A little about me and my projects"
+  github = "https://github.com/yourusername"
+  linkedin = "https://linkedin.com/in/yourusername"
+  email = "you@example.com"

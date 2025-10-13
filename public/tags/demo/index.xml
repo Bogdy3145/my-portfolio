@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo on Bogdan Ion Profile</title>
+    <link>https://bogdanion.netlify.app/tags/demo/</link>
+    <description>Recent content in Demo on Bogdan Ion Profile</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bogdanion.netlify.app/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Project</title>
+      <link>https://bogdanion.netlify.app/english/projects/first-project/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://bogdanion.netlify.app/english/projects/first-project/</guid>
+      <description>Short description of this project</description>
+    </item>
+  </channel>
+</rss>
