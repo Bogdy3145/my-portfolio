@@ -161,14 +161,14 @@ params:
     title: "Bogdan."
     subtitle: "A computer scientist that strives for perfection."
     content: "A passionate researcher and builder. I explore AI, robotics, and mobile applications to create products that are both useful and exciting, but most important, that are **easy to use**."
-    image: /images/bgd.jpg
+    image: /images/bogdanpic.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/files/Bogdan_Ion_CV_ML.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -231,69 +231,19 @@ params:
   # Experience
   experience:
     enable: true
-    # title: "Custom Name"
     items:
-      - job: "Intern Software Developer"
-        company: "AROBS Transilvania"
+      - company: "AROBS Transilvania"
         companyUrl: "https://arobs.com/"
-        date: "Sep 2022 - Dec 2022"
-        featuredLink:
-          enable: false
-          name: "View the project"
-          url: "https://example.com"
-        content: "I worked as an intern for AROBS, being in a 3-man team and working on a side project. We programmed NUCLEO STM32 boards at the lowest level using C."
+        jobs:
+          - name: "Intern Software Developer"
+            date: "Sep 2022 - Dec 2022"
+            content: |-
+              <br>
+              I worked as an intern for AROBS, being in a 3-man team and working on a side project. We programmed NUCLEO STM32 boards at the lowest level using C.
 
-      # - job: "Software Developer"
-      #   company: "Amazon"
-      #   companyUrl: "https://example.com"
-      #   date: "Sep 2020 - Dec 2021"
-      #   featuredLink:
-      #     enable: true
-      #     url: "https://example.com"
-      #   info:
-      #     enable: true
-      #     content: I worked as a software developer for more than one year in Amazon.
-      #   content: |
-      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
 
-      #     - Lead backend developer for a product.
-      #     - Created a frontend design for a product.
 
-      # - job: "Junior Software Developer"
-      #   company: "Apple"
-      #   companyUrl: "https://example.com"
-      #   date: "Jan 2020 - Aug 2020"
-      #   info:
-      #     enable: false
-      #   featuredLink:
-      #     enable: true
-      #     url: "https://example.com"
-      #   content: |
-      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-      #     - Lead backend developer for a product.
-      #     - Created a frontend design for a product.
-
-      # - job: "UI/UX Designer"
-      #   company: "Netflix"
-      #   companyUrl: "https://example.com"
-      #   date: "June 2017 - Nov 2019"
-      #   featuredLink:
-      #     enable: true
-      #     url: "https://example.com"
-      #   content: |
-      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-      #     - Lead backend developer for a product.
-      #     - Created a frontend design for a product.
-
-      # - job: "Product Designer"
-      #   company: "Google"
-      #   companyUrl: "https://example.com"
-      #   date: "Feb 2016 - Mar 2017"
-      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-  # Education
+    # Education
   education:
     enable: true
     # title: "Custom Name"
@@ -362,26 +312,26 @@ params:
             - 9.5/10 in Baccalaureate, Math topic
             
   # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+  # achievements:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Google kickstart runner
+  #       content: I solved all problems with optimal solution.
+  #       url: https://example.com
+  #       image: /images/achievement.jpg
+  #     - title: Facebook Hackathon Winner
+  #       content: Developed a product using Artificial Intelligence.
+  #       image: /images/achievement.jpg
+  #     - title: Hugo Profile
+  #       content: Developed a theme and getting 1K+ downloads per month.
+  #       url: "https://github.com/gurusabarish/hugo-profile"
+  #       image: /images/achievement.jpg
+  #     - title: Microsoft Imagine Runner
+  #       content: We are developed a product which can help others.
+  #     - title: Google Summer of Code
+  #       content: Contributed to a open source project.
+  #       url: https://example.com
 
   # projects
   projects:
@@ -414,7 +364,7 @@ params:
 
       - title: Graph-based biomarker extraction of brain vascular networks
         content: |- 
-          This is a research project where we try to reconstruct blood vessels or airways which are structured as tubular trees.
+          This is a research project under Prof. Maria Zuluaga where we try to reconstruct blood vessels or airways which are structured as tubular trees.
 
           We will try to follow the center of these structures and remake them while not losing their branching topology.
 
@@ -468,32 +418,58 @@ params:
         #   - icon: fab fa-github
         #     url: https://github.com/gurusabarish/HugoProfileV2
 
-# Sports
-  sports:
+  achievements:
     enable: true
-    # title: "Custom Name"
+    title: "Sports"
     items:
-      - title: Rowing
-        content: |- 
+      - title: "Rowing"
+        content: | 
           For my year in Stockholm I was part of Akademiska Roddföreningen and did intense training for the full time. It was amazing.
           
           Unfortunately, there is no such club where I currently live.
-        image: /images/rowing_crop.jpg
-      - title: Bouldering
-        content: I found this passion in 2023. I fell madly in love with it and is probably my main sport currently. 
-        image: /images/boulder_crop.png
-      - title: Climbing
-        content: I think it's better than Bouldering because of the adrenaline which really makes me feel alive but it's not so accesible to do as Bouldering...
-        image: /images/climbing_crop.jpg
-      - title: Snowboarding
-        content: |- 
+        image: "/images/rowing_crop.jpg"
+      - title: "Bouldering"
+        content: "I found this passion in 2023. I fell madly in love with it and is probably my main sport currently."
+        image: "/images/boulder_crop.png"
+      - title: "Climbing"
+        content: "I think it's better than Bouldering because of the adrenaline which really makes me feel alive but it's not so accesible to do as Bouldering..."
+        image: "/images/climbing_crop.jpg"
+      - title: "Snowboarding"
+        content: | 
           The only problem with Snowboarding is that you can only do it 3 months a year. Every year we have a 1 week intense trip to Austria/Italy/France where we ski/snowboard all day.
 
           I started it in 2018 and did it every year since then.
-        image: /images/snowboard_crop.jpg
-      - title: Football
-        content: Last but not least, football. I was born with it, I am a huge football fan and I practice it weekly, but sometimes it's hard if you don't know the right people.
-        image: /images/football_crop.jpg
+        image: "/images/snowboard_crop.jpg"
+      - title: "Football"
+        content: "Last but not least, football. I was born with it, I am a huge football fan and I practice it weekly, but sometimes it's hard if you don't know the right people."
+        image: "/images/football_crop.jpg"
+
+# Sports
+  # sports:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: "Rowing"
+  #       content: | 
+  #         For my year in Stockholm I was part of Akademiska Roddföreningen and did intense training for the full time. It was amazing.
+          
+  #         Unfortunately, there is no such club where I currently live.
+  #       image: "/images/rowing_crop.jpg"
+  #     - title: "Bouldering"
+  #       content: "I found this passion in 2023. I fell madly in love with it and is probably my main sport currently."
+  #       image: "/images/boulder_crop.png"
+  #     - title: "Climbing"
+  #       content: "I think it's better than Bouldering because of the adrenaline which really makes me feel alive but it's not so accesible to do as Bouldering..."
+  #       image: "/images/climbing_crop.jpg"
+  #     - title: "Snowboarding"
+  #       content: | 
+  #         The only problem with Snowboarding is that you can only do it 3 months a year. Every year we have a 1 week intense trip to Austria/Italy/France where we ski/snowboard all day.
+
+  #         I started it in 2018 and did it every year since then.
+  #       image: "/images/snowboard_crop.jpg"
+  #     - title: "Football"
+  #       content: "Last but not least, football. I was born with it, I am a huge football fan and I practice it weekly, but sometimes it's hard if you don't know the right people."
+  #       image: "/images/football_crop.jpg"
 
   #Contact
   contact:
