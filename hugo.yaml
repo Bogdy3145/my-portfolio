@@ -165,18 +165,19 @@ params:
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume ML"
-      url: "/static/files/CV_Bogdan_Ion_ML.pdf"
-      download: true
-      newPage: false
-    button:
-      enable: true
-      name: "Resume DEV"
-      url: "/files/CV_Bogdan_Ion_Dev.pdf"
-      download: true
-      newPage: false
+    buttons:
+      - enable: true
+        name: "Resume ML"
+        url: "/static/files/CV_Bogdan_Ion_ML.pdf"
+        download: true
+        newPage: false
+
+      - enable: true
+        name: "Resume DEV"
+        url: "/files/CV_Bogdan_Ion_Dev.pdf"
+        download: true
+        newPage: false
+
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
