@@ -174,7 +174,7 @@ params:
     button:
       enable: true
       name: "Resume DEV"
-      url: "static/files/CV_Bogdan_Ion_Dev.pdf"
+      url: "/files/CV_Bogdan_Ion_Dev.pdf"
       download: true
       newPage: false
     socialLinks:
