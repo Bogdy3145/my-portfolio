@@ -167,8 +167,14 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume"
-      url: "/files/Bogdan_Ion_CV_ML.pdf"
+      name: "Resume ML"
+      url: "/static/files/CV_Bogdan_Ion_ML.pdf"
+      download: true
+      newPage: false
+    button:
+      enable: true
+      name: "Resume DEV"
+      url: "static/files/CV_Bogdan_Ion_Dev"
       download: true
       newPage: false
     socialLinks:
